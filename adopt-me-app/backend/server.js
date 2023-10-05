@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 // Secret key for JWT (replace with your own secret)
-const JWT_SECRET = 'your-secret-key';
+const JWT_SECRET = 'secret';
 
 // In-memory user database (replace with a real database)
 const users = [
