@@ -1,0 +1,11 @@
+<app-primary-navbar></app-primary-navbar>
+<div class="browse-container" (scroll)="onScroll()">
+    <div class="browse-grid">
+      <div class="browse-item" *ngFor="let pet of petProfiles">
+        <img [src]="pet.image" alt="{{ pet.name }}">
+        <h3>{{ pet.name }}</h3>
+        <p>{{ pet.description }}</p>
+      </div>
+    </div>
+  </div>
+  
