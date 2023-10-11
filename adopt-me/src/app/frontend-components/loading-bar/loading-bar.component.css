@@ -1,0 +1,48 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the loading bar container */
+.loading-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 20px;
+    position: relative;
+}
+
+/* Style the loading bar itself */
+.bar {
+    width: 0;
+    height: 100%;
+    background-color: #FFC300; /* Yellow color */
+    transition: width 0.5s ease-in-out;
+    position: relative;
+}
+
+/* Style the paw icon */
+.paw-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px; /* Adjust as needed */
+    font-size: 20px;
+}
+
+/* Add animation or loading effect */
+.bar.loading {
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
