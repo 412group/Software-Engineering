@@ -15,6 +15,7 @@ import { PrimaryNavbarComponent } from './frontend-components/primary-navbar/pri
     BrowseComponent,
     PrimaryNavbarComponent,
     RegisterComponent,
+    LoginComponent,
     PetProfileComponent
   ],
   imports: [
