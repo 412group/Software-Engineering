@@ -1,47 +1,59 @@
-.primary-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #85C1E9; /* Light blue */
+  color: #fff;
+  padding: 10px 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  padding-right: 20px;
+}
+
+/* Pet icons */
+nav a::before {
+  content: "🐶"; /* Dog emoji */
+  margin-right: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #FFC300; /* Yellow */
+  color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none;
   }
-  
-  .logo img {
-    max-height: 40px;
+
+  nav.active ul {
+      display: block;
   }
-  
-  .search-bar input {
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 3px;
+
+  nav.active .menu-icon {
+      display: none;
   }
-  
-  .search-bar button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 2px 0;
-  }
-  
+}
