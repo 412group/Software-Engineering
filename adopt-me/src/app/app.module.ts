@@ -8,6 +8,7 @@ import { RegisterComponent } from 'src/app/frontend-components/register/register
 import { BrowseComponent } from 'src/app/frontend-components/browse/browse.component';
 import { PetProfileComponent } from './frontend-components/pet-profile/pet-profile.component';
 import { PrimaryNavbarComponent } from './frontend-components/primary-navbar/primary-navbar.component';
+import { HeaderComponent } from './frontend-components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PrimaryNavbarComponent } from './frontend-components/primary-navbar/pri
     PrimaryNavbarComponent,
     RegisterComponent,
     LoginComponent,
-    PetProfileComponent
+    PetProfileComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

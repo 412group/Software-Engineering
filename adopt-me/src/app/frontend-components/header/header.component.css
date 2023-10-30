@@ -1,0 +1,446 @@
+body{
+    background:rgb(255, 242, 244);
+    color:blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* HEADER  */
+header {
+    background:rgb(136, 227, 247);
+    background-image: url("header/pls.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: rgb(0, 136, 255);
+    padding: 10px;
+    text-align: center;
+    height:300px;
+}
+header a {
+    text-decoration:none;
+    margin-top: 60px;
+}
+.mobile {
+    display: none;
+}
+header .logo a {
+    
+    background-image: url("images/logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;       
+    height: 100px;
+    width:100px;
+    text-indent: -9999999px;
+    position: relative;
+    top: -40px; 
+}
+
+.logo:hover{
+    background-color:rgba(136, 227, 247, 0);
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 20px 0 0; 
+}
+
+li:hover{
+    background-color: rgb(247, 252, 255);
+    border-radius: 5px;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+ul li a {
+    color:rgb(3, 16, 31) 
+}
+
+
+
+/* end of header */
+
+/*Responsive RULES*/
+@media screen and (max-width: 950px) {
+    header {
+        height:200px;
+    } 
+
+     
+}
+
+@media screen and (max-width: 646px) {
+    header {
+        height:150px;
+    }  
+    .desktop{
+        display: none;
+    } 
+    .mobile {
+        display: inline-block;
+    } 
+
+    
+}
+@media screen and (max-width:492px) {
+header{
+    height: 100px;
+}
+header .logo a  {
+    background-size: 50px;
+    height: 50px;
+    width:50px;
+  
+}
+}
+@media screen and (max-width: 348px) {
+    header {
+        height:70px;
+    }    
+
+}
+
+
+footer{
+    background:rgb(136, 227, 247);
+    color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.features{
+    align-items: center;
+    background: rgb(0, 136, 255);
+    color:whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border: solid rgb(0, 136, 255) 20px;
+    margin: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+.features figure{
+    margin: auto;
+    text-align: center;
+    text-transform:uppercase ;
+    width: 200px; 
+
+}
+
+
+.features figure img{
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+    width: 200px;
+   
+}
+
+
+
+section.extraspace {
+    
+    text-indent: -9999999px;
+}
+
+/*   SEARCH CONTAINER chatgpt*/
+
+
+/* Style the search container */
+.container{
+    align-items: center;
+    display: flex;
+    margin:20px;
+    justify-content: center;
+   
+}
+button.search-button {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(0, 136, 255, 0.44);
+    padding:11px;
+    color: white;
+    border: none;
+}
+
+.search-container {
+    text-align: center;
+}
+
+/* Style the search input */
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* Style the search button */
+#search-button {
+    padding: 10px 20px;
+    background-color: #9bcbff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the search results container */
+#search-results {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .features {
+        background:rgb(0, 136, 255);
+        display: block;
+    }
+}
+@media screen and (min-width:900){
+    .features{
+        padding:10px;
+    }
+    
+}
+
+.avpets {
+    text-align: center;
+    background-color: white;
+    margin-left: 80px;
+    margin-right: 80px; 
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color:rgb(232, 162, 174);
+}
+
+/* IMAGE NAVIGATION FOR INDEX PAGE*/
+
+.image_slider {
+    margin:20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(136, 227, 247);
+}
+.navslideimage{
+    width: 450px;
+    height: 400px;
+    
+}
+.slider{
+    width: 450px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width:500%;
+    height:500px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide{
+    width:20%;
+    transition: 2s;
+}
+/*css for manual navigation*/
+
+.manualnav{
+position: absolute;
+width: 450px;
+margin-top: 370px;
+display: flex;
+justify-content: center;
+
+}
+.manualnavbtn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+.manualnavbtn:not(:last-child)
+{
+    margin-right: 20px;
+}
+.manualnavbtn:hover{
+  background: white;  
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+/*css for manual navigation end*/
+/*css for automatic navigation */
+
+.autonav{
+    position: absolute;
+    width: 450px;
+    margin-top: 370px;
+    display: flex;
+    justify-content: center;
+}
+.autonav div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.autonav div:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .autonav.autonav-1{
+    background:rgb(136, 227, 247);
+}
+#radio2:checked ~ .autonav.autonav-2{
+    background:rgb(136, 227, 247);
+}
+#radio3:checked ~ .autonav.autonav-3{
+    background:rgb(136, 227, 247);
+}
+#radio4:checked ~ .autonav.autonav-4{
+    background:rgb(136, 227, 247);
+}
+/*css for automatic navigation */
+/* IMAGE NAVIGATION FOR INDEX PAGE END*/
+/* CSS for sign up/sign in */
+
+.signup-container{
+
+    width: 100%;
+    height: 100vh;
+ 
+    margin: 0;
+    background-image: linear-gradient(rgba(0,0, 50, 0.8), rgba(0, 0, 50, 0.8)),url(images/signin.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.signin-box{
+    width: 90%;
+    max-width: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+    padding: 50px 60px 70px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+    background-image: url(images/pug.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20% ;
+    
+}
+.signin-box h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: pink;
+    position: relative;
+}
+.signin-box h1::after {
+
+    content: '';
+    width: 150px;
+    height: 2px;
+    border-radius: 3px;
+    background: rgb(72, 190, 223);
+    position: absolute;
+    bottom:-12px;
+    left:50%;
+    transform: translateX(-50%);
+    
+}
+
+.input-field {
+    background: rgba(214, 224, 227, 0.678);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding:18px 15px;
+
+}
+.input-field i
+{
+    margin-left: 15px;
+    color: grey;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration:none;
+    color:grey;
+}
+.btn-field{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 45%;
+    background:pink;
+    color: black;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline:0;
+    cursor: pointer;
+    transition: background 1s;
+
+}
+
+.btn-field button.disable{
+    background: rgba(255, 192, 203, 0.31);
+    color:black;
+}

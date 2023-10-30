@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html > 
+    <head>
+        <title>Pet Connect</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pets.html">PETS</a></li>
+                    <li class="mobile"><a href="faq.html">FAQ</a></li>
+                    <li class="mobile"><a href="contact.html">CONTACT</a></li>
+                    <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
+                    <li class="desktop"><a href="faq.html">FAQ</a></li>
+                    <li class="desktop"><a href="contact.html">CONTACT</a></li>
+                    <li><a href="signin.html">LOG IN</a></li>
+                   
+                        
+                </ul>
+            </nav>
+            
+
+        </header>
+        <div class="container">
+            <div class="search-container"></div>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button class="search-button">Search</button>
+        </div>
+
+        <section class="features">
+            <figure>
+                <img src="images/smolcat.png" alt="Small kitten">
+                <figcaption>CATS</figcaption>
+            </figure>
+           <figure>
+            <img src="images/doge.png" alt="small dog">
+            <figcaption>DOGS</figcaption>
+           </figure>
+        </section>
+        <section class="avpets">AVAILABLE PETS! Click to see more!</section>
+
+        <!--slide nav button bullshit-->
+        <section class="image_slider"> 
+            <div class="slider">
+                <div class="slides"> 
+                    <!--buttons for sliders-->
+                    <input type="radio" name="radio-button" id="radio1">
+                    <input type="radio" name="radio-button" id="radio2">
+                    <input type="radio" name="radio-button" id="radio3">
+                    <input type="radio" name="radio-button" id="radio4">
+                    
+                    <!--images start-->
+                    <div class="slide first">
+                        <img src="images/slide1.png" alt="Husky Image" class="navslideimage">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide2.png" alt="Beagle Image" class="navslideimage">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide3.png" alt="Siamese Image" class="navslideimage">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slide4.png" alt="Orange Image" class="navslideimage">
+                    </div>
+
+                    <!--automatic navigation-->
+                    <div class="autonav">   
+                        <div class="autonav-1"></div>
+                        <div class="autonav-2"></div>
+                        <div class="autonav-3"></div>
+                        <div class="autonav-4"></div>
+                    </div>
+
+                    <!--manual navigation-->
+                    <div class="manualnav">
+                        <label for="radio1" class="manualnavbtn"></label>
+                        <label for="radio2" class="manualnavbtn"></label>
+                        <label for="radio3" class="manualnavbtn"></label>
+                        <label for="radio4" class="manualnavbtn"></label>
+                    </div>
+                </div> 
+            </div>  
+            <script type="text/javascript">
+                var counter =1
+                setInterval(function(){
+                    document.getElementById('radio'+ counter).checked=true;
+                    counter++
+                    if (counter > 4){
+                        counter =1;
+                    }
+
+                }, 5000);
+            </script>
+
+        </section>
+        <!--end of slide nav button bullshit-->
+
+        <section class="extraspace">lower section padded space</section>
+        <footer>
+            123 Main Street Towson, MD • 555-555-5555 us@me.com
+        </footer>
+
+        <script> </script>
+    
+
+    <script src="script/main.js"></script>
+    </body>
+    
+    
+
+</html>
+
