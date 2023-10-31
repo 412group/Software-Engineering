@@ -1,8 +1,44 @@
 <!DOCTYPE html>
-<html > 
+<html> 
     <head>
         <title>Pet Connect</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                background: rgb(255, 242, 244);
+                color: blue;
+            }
+    
+            .back-to-home {
+                text-align: center;
+                margin: 20px;
+            }
+    
+            .pet-profiles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 20px;
+            }
+    
+            .pet-profile {
+                background: white;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 20px;
+                width: 300px;
+                text-align: center;
+                display: inline-block;
+            }
+    
+            .pet-profile img {
+                border: 4px solid white;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+                width: 200px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -19,18 +55,34 @@
             <h1>PETS</h1>
 
         </header>
-        <section>Triple Icon
-            <div>a</div>
-            <div>b</div>
-            <div>c</div>
 
+        <div class="back-to-home">
+            <a class="cute-button" href="index.html">HOME</a>
+        </div>
+
+        <section>
+            <div class="avpets">
+                <div class="pet-profile">
+                    <img src="images/slide4.png" alt="Pet 1">
+                    <p>Fluffy</p>
+                </div>
+                <div class="pet-profile">
+                    <img src="images/slide3.png" alt="Pet 2">
+                    <p>Whiskers</p>
+                </div>
+                <div class="pet-profile">
+                    <img src="images/signin.png" alt="Pet 3">
+                    <p>Buddy</p>
+                </div>
+                <div class="pet-profile">
+                    <img src="images/slide1.png" alt="Pet 4">
+                    <p>Luna</p>
+                </div>
+                <div class="pet-profile">
+                    <img src="images/doge.png" alt="Pet 5">
+                    <p>Rocky</p>
+                </div>
+            </div>
         </section>
-        <section>lower section</section>
         <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
-
-
     </body>
-    
-    
-
-</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html > 
+<html> 
     <head>
         <title>Pet Connect</title>
         <link rel="stylesheet" href="styles.css">
@@ -12,34 +12,40 @@
                     <li><a href="pets.html">PETS</a></li>
                     <li class="mobile"><a href="faq.html">FAQ</a></li>
                     <li class="mobile"><a href="contact.html">CONTACT</a></li>
-                    <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
                     <li class="desktop"><a href="faq.html">FAQ</a></li>
+                    <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
                     <li class="desktop"><a href="contact.html">CONTACT</a></li>
-                    <li><a href="signin.html">LOG IN</a></li>
-                   
-                        
+                    <li class="login-link"><a href="log-in.html">LOG-IN</a></li>
+                    <li class="signup-link"><a href="sign-up.html">SIGN-UP</a></li>
                 </ul>
             </nav>
-            
-
         </header>
         <div class="container">
             <div class="search-container"></div>
                 <input type="text" id="search-input" placeholder="Search...">
-                <button class="search-button">Search</button>
+                <button class="search-button" onclick="searchPets()">Search</button>
         </div>
 
         <section class="features">
             <figure>
                 <img src="images/smolcat.png" alt="Small kitten">
-                <figcaption>CATS</figcaption>
+                <figcaption>
+                    <a href="cats.html">CATS</a>
+                </figcaption>
             </figure>
            <figure>
             <img src="images/doge.png" alt="small dog">
-            <figcaption>DOGS</figcaption>
+            <figcaption>
+                <a href="dogs.html">DOGS</a>
+            </figcaption>
            </figure>
         </section>
-        <section class="avpets">AVAILABLE PETS! Click to see more!</section>
+        <section class="avpets">
+            <div>AVAILABLE PETS! Click to see more!</div>
+            <button class="cute-button">
+                <a href="more.html">MORE</a>
+            </button>
+        </section>
 
         <!--slide nav button bullshit-->
         <section class="image_slider"> 
@@ -102,7 +108,12 @@
             123 Main Street Towson, MD • 555-555-5555 us@me.com
         </footer>
 
-        <script> </script>
+        <script>
+            function searchPets() {
+                var searchInput = document.getElementById('search-input').value;
+                alert("You searched for: " + searchInput);
+            }   
+        </script>
     
 
     <script src="script/main.js"></script>

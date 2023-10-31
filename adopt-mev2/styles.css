@@ -169,10 +169,11 @@ section.extraspace {
 button.search-button {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    background-color: rgba(0, 136, 255, 0.44);
-    padding:11px;
+    background-color: rgb(0, 136, 255);
     color: white;
-    border: none;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid #ccc;
 }
 
 .search-container {
@@ -437,10 +438,22 @@ form p a {
     outline:0;
     cursor: pointer;
     transition: background 1s;
+    margin: auto;
 
 }
 
 .btn-field button.disable{
     background: rgba(255, 192, 203, 0.31);
     color:black;
+}
+
+.cute-button{
+    background: #ff9a8b;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
