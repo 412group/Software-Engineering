@@ -31,6 +31,9 @@
                         <button type="button" id="signupBtn">Sign up</button>
                         <button type="button" id="signinBtn" class="disable">Sign in</button>
                     </div>
+                    <div class="btn-field">
+                        <button type="button" id="homeBtn" class="home-button">Home</button>
+                    </div>
                 </form>
             </div>
 
@@ -54,6 +57,11 @@
             signupBtn.classList.remove("disable");
             signinBtn.classList.add("disable");
         }
+
+        let homeBtn = document.getElementById("homeBtn");
+        homeBtn.onclick = function() {
+            window.location.href = "index.html";  // Redirects to the homepage
+}
 
         
         </script>
