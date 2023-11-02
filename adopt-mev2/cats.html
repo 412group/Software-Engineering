@@ -3,10 +3,64 @@
     <head>
         <title>Pet Connect</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                background: rgb(255, 242, 244);
+                color: blue;
+            }
+    
+            .back-to-home {
+                text-align: center;
+                margin: 20px;
+            }
+    
+            .pet-profiles {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 20px;
+            }
+    
+            .pet-profile {
+                background: white;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 20px;
+                width: 300px;
+                text-align: center;
+                display: inline-block;
+            }
+    
+            .pet-profile img {
+                border: 4px solid white;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+                width: 200px;
+            }
+        </style>
     </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pets.html">PETS</a></li>
+                    <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="signin.html">LOG IN</a></li>
+                </ul>
+            </nav>
+            <h1>CATS</h1>
+        </header>
 
-        <p>CATS COMING SOON . . .</p>
-        <img src="images/smolcat.png" alt="Small kitten">
-        <button class="cute-button">
-            <a href="index.html">Home</a>
-        </button>
+        <div class="back-to-home">
+            <a class="cute-button" href="index.html">HOME</a>
+        </div>
+        <section>
+            <p>CATS COMING SOON . . .</p>
+            <img src="images/smolcat.png" alt="Small kitten">
+        </section>
+        <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
+    </body>
