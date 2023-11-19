@@ -6,10 +6,7 @@
         <!-- Stylesheet for AI Chatbot -->
         <link rel="stylesheet" href="styleai.css">
         <style>
-            body {
-                background: rgb(255, 242, 244);
-                color: blue;
-            }
+            
     
             .back-to-home {
                 text-align: center;
@@ -47,10 +44,18 @@
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="pets.html">PETS</a></li>
+                    <li class="menu-item">
+                        <a href="pets.html">PETS</a>
+                        <ul class="submenu">
+                            <li><a href="cats.html">Cats</a></li>
+                            <li><a href="dogs.html">Dogs</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile"><a href="faq.html">FAQ</a></li>
+                    <li class="mobile"><a href="contact.html">CONTACT</a></li>
                     <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="desktop"><a href="faq.html">FAQ</a></li>
+                    <li class="desktop"><a href="contact.html">CONTACT</a></li>
                     <li><a href="login.html">LOG IN</a></li>
                 </ul>
             </nav>
@@ -62,25 +67,30 @@
 
         <section>
             <div class="avpets">
+                <!-- fluffy profile -->
                 <div class="pet-profile">
-                    <img src="images/slide4.png" alt="Pet 1">
-                    <p>Fluffy</p>
+                    <img src="petprofiles/fluffy/fluffy1.png" alt="Pet 4">
+                    <p><a href="petprofiles/fluffy/fluffy.html">Fluffy</a></p>
                 </div>
+                 <!-- Purrlock profile -->
+                 <div class="pet-profile">
+                    <img src="petprofiles/purrlock holmes/purrlock1.png" alt="Pet 4">
+                    <p><a href="petprofiles/purrlock holmes/purrlock.html">Purrlock Holmes</a></p>
+                </div>
+                 <!-- waffles profile -->
                 <div class="pet-profile">
-                    <img src="images/slide3.png" alt="Pet 2">
-                    <p>Whiskers</p>
+                    <img src="petprofiles/waffles/waffles.png" alt="Pet 4">
+                    <p><a href="petprofiles/waffles/waffles.html">Waffles</a></p>
                 </div>
-                <div class="pet-profile">
-                    <img src="images/signin.png" alt="Pet 3">
-                    <p>Buddy</p>
-                </div>
+                 <!-- luna profile EXAMPLE PATH TO PROFILES -->
                 <div class="pet-profile">
                     <img src="petprofiles/luna/lunaprofilepic.png" alt="Pet 4">
                     <p><a href="petprofiles/luna/luna.html">Luna</a></p>
                 </div>
+                 <!-- Hazel profile -->
                 <div class="pet-profile">
-                    <img src="images/doge.png" alt="Pet 5">
-                    <p>Rocky</p>
+                    <img src="petprofiles/hazel/hazel2.png" alt="Pet 4">
+                    <p><a href="petprofiles/hazel/hazel.html">Hazel</a></p>
                 </div>
             </div>
             <!-- AI Chatbot initialization -->

@@ -131,6 +131,13 @@ footer{
     box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
     
 }
+.features a {
+    text-decoration: none;
+}
+
+.avpets a {
+    text-decoration: none;
+}
 
 .features figure{
     margin: auto;
@@ -464,6 +471,7 @@ form p a {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin: 10px;
 }
 
 .home-button {
@@ -644,3 +652,26 @@ form p a {
     }
 }
 /*contact page end*/
+.pet-profile a {
+    text-decoration: none;
+}
+
+
+/* Styles for the dropdown menu */
+.menu-item {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
