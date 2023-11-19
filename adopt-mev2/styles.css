@@ -1,5 +1,5 @@
 body{
-    background:rgb(255, 242, 244);
+    background:rgb(238, 236, 236);
     color:blue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
@@ -125,9 +125,10 @@ footer{
     display: flex;
     flex-direction: row;
     border: solid rgb(0, 136, 255) 20px;
-    margin: 20px;
     border-radius: 20px;
     justify-content: center;
+    margin: 20px 150px 20px 150px; 
+    box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
     
 }
 
@@ -224,24 +225,31 @@ button.search-button {
 .avpets {
     text-align: center;
     background-color: white;
-    margin-left: 80px;
-    margin-right: 80px; 
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
-    color:rgb(232, 162, 174);
+    color:rgb(0, 0, 0);
+    margin: 20px 150px 20px 150px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+
+.pet-profile img {
+    width: 150px;
+    height: 150px;
+}
+
 
 /* IMAGE NAVIGATION FOR INDEX PAGE*/
 
 .image_slider {
-    margin:20px;
     border-radius: 20px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgb(136, 227, 247);
+    margin: 20px 150px 20px 150px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .navslideimage{
     width: 450px;
@@ -478,3 +486,161 @@ form p a {
 .home-button:hover {
     background-color: #FF5050; /* A slightly darker shade for hover effect */
 }
+
+/* pet profile start*/
+.petprofile{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    margin: 10px;
+  
+}
+.biologicals{
+
+   
+    color: rgb(0, 0, 0);
+    height: 230px;
+    width: 300px;
+    margin: 5px;
+    
+}
+
+.petinfo {
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+}
+
+.about{
+ 
+    padding: 20px;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    width: 400px;
+    border-radius: 20px;
+   
+}
+.CHARACTERISTICS{
+   
+    text-align: justify;
+    padding: 20px;
+    color: black;
+   
+    box-sizing: border-box;
+    width: 600px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#adoptbtn{
+
+    background:pink;
+    color: black;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: 0;
+    outline:0;
+    cursor: pointer;
+}
+
+.profile{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 150px 20px 150px; 
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+    background-size: 600px 800px;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile {
+        margin: 10px; 
+        display: flex;
+        flex-direction: column;
+    }  
+    .petprofile{
+    
+        align-items: center;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        margin: 10px;
+    }  
+
+    .petinfo {
+        color: black;
+        align-items: center;
+        display: flex;
+        flex-direction:column;  
+        justify-content: center;
+    }
+
+    
+}
+
+/*pet profile end*/
+
+
+/* contact page css*/
+
+.contact-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact-container h2 {
+    color: rgb(0, 136, 255);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-label {
+    display: block;
+    margin: 10px 0;
+    color: rgb(3, 16, 31);
+}
+
+.contact-input[type="email"],
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.contact-submit[type="submit"] {
+    background-color: pink;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-submit[type="submit"]:hover {
+    background-color:pink;
+}
+
+/* Responsive styles for the contact form */
+@media screen and (max-width: 600px) {
+    .contact-form {
+        max-width: 100%;
+    }
+}
+/*contact page end*/
