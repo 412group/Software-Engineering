@@ -1,75 +1,122 @@
 <!DOCTYPE html>
-<html > 
-    <head>
-        <title>Pet Connect</title>
-        <link rel="stylesheet" href="styles.css">
+<html>
 
-        <!-- Stylesheet for AI Chatbot -->
-        <link rel="stylesheet" href="styleai.css">
-        <style>
-            body {
-                background: rgb(255, 242, 244);
-                color: blue;
-            }
-    
-            .back-to-home {
-                text-align: center;
-                margin: 20px;
-            }
-    
-            .pet-profiles {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                margin: 20px;
-            }
-    
-            .pet-profile {
-                background: white;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                margin: 10px;
-                padding: 20px;
-                width: 300px;
-                text-align: center;
-                display: inline-block;
-            }
-    
-            .pet-profile img {
-                border: 4px solid white;
-                border-radius: 50%;
-                box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
-                width: 200px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="pets.html">PETS</a></li>
-                    <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="login.html">LOG IN</a></li>
-                </ul>
-            </nav>
-            <h1>DOGS</h1>
-        </header>
+<head>
+    <title>Pet Connect</title>
+    <link rel="stylesheet" href="styles.css">
 
-        <div class="back-to-home">
-            <a class="cute-button" href="index.html">HOME</a>
+    <!-- Stylesheet for AI Chatbot -->
+    <link rel="stylesheet" href="styleai.css">
+    <style>
+        body {
+            background: rgb(255, 242, 244);
+            color: blue;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .pet-profiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .pet-profile {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .pet-profile img {
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pets.html">PETS</a></li>
+                <li class="logo"><a href="index.html">Adopt Me Logo</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+        <h1>DOGS</h1>
+    </header>
+
+    <div class="back-to-home">
+        <a class="cute-button" href="index.html">HOME</a>
+    </div>
+
+    <section class="pet-profiles">
+        <!-- Buddy's Profile -->
+        <div class="pet-profile">
+            <img src="petprofiles/buddy/buddy.jpg" alt="Buddy">
+            <p><a href="petprofiles/buddy/buddy.html">Buddy</a></p>
         </div>
-        <section>
-            <p>DOGS COMING SOON . . .</p>
-            <img src="images/doge.png" alt="small dog">    
-            <!-- AI Chatbot initialization -->
-            <div id="rendering-information" data-formid="Frequently_Asked_Questions_D0PTH" data-frame-source="https://embed.pickaxeproject.com/axe?id=Frequently_Asked_Questions_D0PTH&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Real+Head+Pro&size_header=20&font_body=Real+Head+Pro&size_body=14&font_labels=Real+Head+Pro&size_labels=12&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_bb=FF9A8B&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_bbo=100&s_f=box&s_b=filled&s_t=0.5&s_r=2" data-title="Frequently Asked Questions!"></div>
-        
-        </section>
-        <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
-        <!-- JavaScript for AI Chatbot -->
-        <script src="script/aiButton.js"></script>
-    </body>
+
+        <!-- Charlie's Profile -->
+        <div class="pet-profile">
+            <img src="petprofiles/Charlie/charlie.jpg" alt="Charlie">
+            <p><a href="petprofiles/Charlie/Charlie.html">Charlie</a></p>
+        </div>
+
+        <!-- Daisy's Profile -->
+        <div class="pet-profile">
+            <img src="petprofiles/Daisy/daisy.jpg" alt="Daisy">
+            <p><a href="petprofiles/Daisy/Daisy.html">Daisy</a></p>
+        </div>
+
+        <!-- Max's Profile -->
+        <div class="pet-profile">
+            <img src="petprofiles/Max/max.jpg" alt="Max">
+            <p><a href="petprofiles/Max/Max.html">Max</a></p>
+        </div>
+           <!-- Hazel's Profile -->
+    <div class="pet-profile">
+        <img src="petprofiles/hazel/hazel1.png" alt="Hazel">
+        <p><a href="petprofiles/hazel/hazel.html">Hazel</a></p>
+    </div>
+
+    <!-- Waffles's Profile -->
+    <div class="pet-profile">
+        <img src="petprofiles/waffles/waffles.png" alt="Waffles">
+        <p><a href="petprofiles/waffles/waffles.html">Waffles</a></p>
+    </div>
+
+    <!-- Luna's Profile -->
+    <div class="pet-profile">
+        <img src="petprofiles/luna/luna1.png" alt="Luna">
+        <p><a href="petprofiles/luna/luna.html">Luna</a></p>
+    </div>
+
+        <!-- Add more dog profiles as needed -->
+    </section>
+
+    <!-- AI Chatbot initialization -->
+    <div id="rendering-information" data-formid="Frequently_Asked_Questions_D0PTH"
+        data-frame-source="https://embed.pickaxeproject.com/axe?id=Frequently_Asked_Questions_D0PTH&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Real+Head+Pro&size_header=20&font_body=Real+Head+Pro&size_body=14&font_labels=Real+Head+Pro&size_labels=12&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_bb=FF9A8B&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_bbo=100&s_f=box&s_b=filled&s_t=0.5&s_r=2"
+        data-title="Frequently Asked Questions!"></div>
+
+    <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
+    <!-- JavaScript for AI Chatbot -->
+    <script src="script/aiButton.js"></script>
+</body>
+
 </html>
