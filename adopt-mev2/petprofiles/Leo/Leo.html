@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Connect</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../pets.html">PETS</a></li>
+                <li class="logo"><a href="../../index.html">Adopt Me Logo</a></li>
+                <li><a href="../../faq.html">FAQ</a></li>
+                <li><a href="../../contact.html">CONTACT</a></li>
+                <li><a href="../../login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <section class="petprofile">
+            <section class="image_slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!--buttons for sliders-->
+                        <input type="radio" name="radio-button" id="radio1">
+
+                        <!--images start-->
+                        <div class="slide first">
+                            <img src="leo1.jpg" alt="Persian Cat Image" class="navslideimage">
+                        </div>
+
+                        <!--automatic navigation-->
+                        <div class="autonav">
+                            <div class "autonav-1"></div>
+                        </div>
+
+                        <!--manual navigation-->
+                        <div class="manualnav">
+                            <label for="radio1" class="manualnavbtn"></label>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter = 1
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </section>
+
+            <!--end of slide nav button-->
+            <section>
+                <div class="biologicals">
+                    <p><h1>MEET LEO!</h1></p>
+                    <p><strong>Age:</strong> 2 years</p>
+                    <p><strong>Breed:</strong> Persian</p>
+                    <p><strong>Size:</strong> Small</p>
+                    <p><strong>Sex:</strong> Male</p>
+                    <p><strong>Coat Maintenance:</strong> High</p>
+                    <p><strong>Activity Level:</strong> Low</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="petinfo">
+
+            <div class="CHARACTERISTICS">
+                <p><strong>CHARACTERISTICS:</strong> </p>
+                <p>
+                    Meet Leo, the regal Persian cat with a luxurious coat and a calm demeanor. Leo is a sophisticated and gentle feline companion, ready to bring elegance to any home.
+                </p>
+                <p>Leo's stunning appearance and calm personality make him an ideal indoor companion. His long, flowing coat requires regular grooming, and he enjoys being pampered and brushed. Leo is content to spend his days lounging in comfortable spots and observing the world with his expressive eyes.</p>
+                <p>This charming Persian cat is known for his peaceful nature and affectionate disposition. Leo enjoys quiet moments of bonding and appreciates a serene environment. He is the perfect choice for those seeking a laid-back and elegant feline friend.</p>
+                <p>Leo is patiently waiting for a loving family to appreciate his grace and provide a cozy home. Adopt Leo and add a touch of Persian sophistication to your life!</p>
+            </div>
+            <section class="about">
+                <div>
+                    <p><h1>ABOUT</h1><p>
+                    <p>GOOD WITH OTHER PETS:<br>Prefers a calm environment, may get along with other calm cats</p>
+                    <p>GOOD WITH CHILDREN: <br>Yes</p>
+                    <p>HOUSE-TRAINED:<br> Yes</p>
+                    <p>HEALTH: <br>Vaccinations up to date. <br> Neutered</p>
+                </div>
+                <div>
+                    <p><h1>INTERESTED IN ADOPTION?</h1></p>
+                    <p> <a href="../../faq.html"><button id="adoptbtn"> Adoption Guidelines</button></a></p>
+                    <p> <a href="../../contact.html"> <button id="adoptbtn">Contact Us</button></a> </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
+
+</body>
+
+</html>

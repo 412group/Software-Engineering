@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Connect</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../pets.html">PETS</a></li>
+                <li class="logo"><a href="../../index.html">Adopt Me Logo</a></li>
+                <li><a href="../../faq.html">FAQ</a></li>
+                <li><a href="../../contact.html">CONTACT</a></li>
+                <li><a href="../../login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <section class="petprofile">
+            <section class="image_slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!--buttons for sliders-->
+                        <input type="radio" name="radio-button" id="radio1">
+
+                        <!--images start-->
+                        <div class="slide first">
+                            <img src="buddy1.jpg" alt="Golden Retriever Image" class="navslideimage">
+                        </div>
+
+                        <!--automatic navigation-->
+                        <div class="autonav">
+                            <div class="autonav-1"></div>
+                        </div>
+
+                        <!--manual navigation-->
+                        <div class="manualnav">
+                            <label for="radio1" class="manualnavbtn"></label>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter = 1
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </section>
+
+            <!--end of slide nav button-->
+            <section>
+                <div class="biologicals">
+                    <p><h1>MEET BUDDY!</h1></p>
+                    <p><strong>Age:</strong> 4 years</p>
+                    <p><strong>Breed:</strong> Golden Retriever</p>
+                    <p><strong>Size:</strong> Large</p>
+                    <p><strong>Sex:</strong> Male</p>
+                    <p><strong>Coat Maintenance:</strong> Moderate</p>
+                    <p><strong>Activity Level:</strong> High</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="petinfo">
+
+            <div class="CHARACTERISTICS">
+                <p><strong>CHARACTERISTICS:</strong> </p>
+                <p>
+                    Meet Buddy, the epitome of warmth and companionship. Buddy is a gentle and friendly Golden Retriever with a heart as golden as his coat. His joyful demeanor and wagging tail can brighten any day.
+                </p>
+                <p>Buddy loves spending time with people and is exceptionally good with children. Whether it's playing fetch in the backyard or enjoying a leisurely walk in the park, Buddy is always up for an adventure.</p>
+                <p>With his sociable nature and affectionate personality, Buddy is not just a pet; he's a loyal friend ready to create lasting memories with his new family. Adopt Buddy and add a touch of golden sunshine to your life!</p>
+            </div>
+            <section class="about">
+                <div>
+                    <p><h1>ABOUT</h1><p>
+                    <p>GOOD WITH OTHER PETS:<br>Gets along well with other dogs and cats</p>
+                    <p>GOOD WITH CHILDREN: <br>Yes</p>
+                    <p>HOUSE-TRAINED:<br> Yes</p>
+                    <p>HEALTH: <br>Vaccinations up to date. <br> Neutered</p>
+                </div>
+                <div>
+                    <p><h1>INTERESTED IN ADOPTION?</h1></p>
+                    <p> <a href="../../faq.html"><button id="adoptbtn"> Adoption Guidelines</button></a></p>
+                    <p> <a href="../../contact.html"> <button id="adoptbtn">Contact Us</button></a> </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Connect</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../pets.html">PETS</a></li>
+                <li class="logo"><a href="../../index.html">Adopt Me Logo</a></li>
+                <li><a href="../../faq.html">FAQ</a></li>
+                <li><a href="../../contact.html">CONTACT</a></li>
+                <li><a href="../../login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <section class="petprofile">
+            <section class="image_slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!--buttons for sliders-->
+                        <input type="radio" name="radio-button" id="radio1">
+
+                        <!--images start-->
+                        <div class="slide first">
+                            <img src="lily1.jpg" alt="Ragdoll Cat Image" class="navslideimage">
+                        </div>
+
+                        <!--automatic navigation-->
+                        <div class="autonav">
+                            <div class "autonav-1"></div>
+                        </div>
+
+                        <!--manual navigation-->
+                        <div class="manualnav">
+                            <label for="radio1" class="manualnavbtn"></label>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter = 1
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </section>
+
+            <!--end of slide nav button-->
+            <section>
+                <div class="biologicals">
+                    <p><h1>MEET LILY!</h1></p>
+                    <p><strong>Age:</strong> 1.5 years</p>
+                    <p><strong>Breed:</strong> Ragdoll</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Sex:</strong> Female</p>
+                    <p><strong>Coat Maintenance:</strong> Moderate</p>
+                    <p><strong>Activity Level:</strong> Moderate</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="petinfo">
+
+            <div class="CHARACTERISTICS">
+                <p><strong>CHARACTERISTICS:</strong> </p>
+                <p>
+                    Meet Lily, the graceful Ragdoll cat with a serene presence and beautiful blue eyes. Lily is a calm and affectionate feline companion, ready to bring tranquility to any home.
+                </p>
+                <p>Lily's soft, semi-longhair coat showcases the classic color patterns of a Ragdoll cat. Her gentle disposition and laid-back nature make her an excellent choice for those seeking a relaxed and loving cat. Lily enjoys being pampered with gentle strokes and often follows her human companions around the house.</p>
+                <p>This sweet Ragdoll is known for her easygoing nature and compatibility with families. Lily is content to spend lazy afternoons lounging in comfortable spots and is always ready for a cozy cuddle session. She is an ideal choice for those looking for a loving and low-maintenance feline friend.</p>
+                <p>Lily is eagerly waiting for a forever home where she can bring joy and calmness. Adopt Lily and experience the soothing presence of this beautiful Ragdoll cat!</p>
+            </div>
+            <section class="about">
+                <div>
+                    <p><h1>ABOUT</h1><p>
+                    <p>GOOD WITH OTHER PETS:<br>Gets along well with other cats</p>
+                    <p>GOOD WITH CHILDREN: <br>Yes</p>
+                    <p>HOUSE-TRAINED:<br> Yes</p

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Connect</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../pets.html">PETS</a></li>
+                <li class="logo"><a href="../../index.html">Adopt Me Logo</a></li>
+                <li><a href="../../faq.html">FAQ</a></li>
+                <li><a href="../../contact.html">CONTACT</a></li>
+                <li><a href="../../login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <section class="petprofile">
+            <section class="image_slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!--buttons for sliders-->
+                        <input type="radio" name="radio-button" id="radio1">
+
+                        <!--images start-->
+                        <div class="slide first">
+                            <img src="charlie1.jpg" alt="Bulldog Image" class="navslideimage">
+                        </div>
+
+                        <!--automatic navigation-->
+                        <div class="autonav">
+                            <div class="autonav-1"></div>
+                        </div>
+
+                        <!--manual navigation-->
+                        <div class="manualnav">
+                            <label for="radio1" class="manualnavbtn"></label>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter = 1
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </section>
+
+            <!--end of slide nav button-->
+            <section>
+                <div class="biologicals">
+                    <p><h1>MEET CHARLIE!</h1></p>
+                    <p><strong>Age:</strong> 3 years</p>
+                    <p><strong>Breed:</strong> Bulldog</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Sex:</strong> Male</p>
+                    <p><strong>Coat Maintenance:</strong> Low</p>
+                    <p><strong>Activity Level:</strong> Moderate</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="petinfo">
+
+            <div class="CHARACTERISTICS">
+                <p><strong>CHARACTERISTICS:</strong> </p>
+                <p>
+                    Meet Charlie, the charming Bulldog with a heart as big as his wrinkled smile. Charlie is a laid-back and lovable canine companion, ready to bring joy to any home.
+                </p>
+                <p>Charlie is known for his easygoing nature and friendly disposition. He enjoys leisurely strolls, lounging in the sun, and being the center of attention. His distinctive appearance and gentle demeanor make him an irresistible friend for Bulldog enthusiasts.</p>
+                <p>Despite his relaxed demeanor, Charlie has moments of playfulness. He loves engaging in short bursts of activity and is always up for a game of fetch or a cozy nap on the couch.</p>
+                <p>Charlie is patiently waiting for a loving family to share his warmth and affection. Adopt Charlie and add a touch of Bulldog charm to your life!</p>
+            </div>
+            <section class="about">
+                <div>
+                    <p><h1>ABOUT</h1><p>
+                    <p>GOOD WITH OTHER PETS:<br>Gets along well with other dogs</p>
+                    <p>GOOD WITH CHILDREN: <br>Yes</p>
+                    <p>HOUSE-TRAINED:<br> Yes</p>
+                    <p>HEALTH: <br>Vaccinations up to date. <br> Neutered</p>
+                </div>
+                <div>
+                    <p><h1>INTERESTED IN ADOPTION?</h1></p>
+                    <p> <a href="../../faq.html"><button id="adoptbtn"> Adoption Guidelines</button></a></p>
+                    <p> <a href="../../contact.html"> <button id="adoptbtn">Contact Us</button></a> </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
+
+</body>
+
+</html>
