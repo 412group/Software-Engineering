@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Connect</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../../pets.html">PETS</a></li>
+                <li class="logo"><a href="../../index.html">Adopt Me Logo</a></li>
+                <li><a href="../../faq.html">FAQ</a></li>
+                <li><a href="../../contact.html">CONTACT</a></li>
+                <li><a href="../../login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <section class="petprofile">
+            <section class="image_slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!--buttons for sliders-->
+                        <input type="radio" name="radio-button" id="radio1">
+
+                        <!--images start-->
+                        <div class="slide first">
+                            <img src="lucy1.jpg" alt="Calico Cat Image" class="navslideimage">
+                        </div>
+
+                        <!--automatic navigation-->
+                        <div class="autonav">
+                            <div class "autonav-1"></div>
+                        </div>
+
+                        <!--manual navigation-->
+                        <div class="manualnav">
+                            <label for="radio1" class="manualnavbtn"></label>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var counter = 1
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++
+                        if (counter > 4) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </section>
+
+            <!--end of slide nav button-->
+            <section>
+                <div class="biologicals">
+                    <p><h1>MEET LUCY!</h1></p>
+                    <p><strong>Age:</strong> 2.5 years</p>
+                    <p><strong>Breed:</strong> Calico</p>
+                    <p><strong>Size:</strong> Medium</p>
+                    <p><strong>Sex:</strong> Female</p>
+                    <p><strong>Coat Type:</strong> Long</p>
+                    <p><strong>Activity Level:</strong> Moderate</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="petinfo">
+
+            <div class="CHARACTERISTICS">
+                <p><strong>CHARACTERISTICS:</strong> </p>
+                <p>
+                    Meet Lucy, the beautiful Calico cat with a striking combination of colors. Lucy is a gentle and affectionate feline companion, ready to bring warmth to any home.
+                </p>
+                <p>Lucy's unique coat pattern and serene nature make her a standout among cats. She enjoys peaceful moments and loves to be pampered with gentle strokes. Lucy is known for her friendly demeanor and is a great companion for those seeking a cat with a calm and loving personality.</p>
+                <p>This lovable Calico is also social with other pets and adapts well to various environments. Lucy enjoys lounging in sunny spots and observing her surroundings with curiosity. She is the perfect choice for individuals or families looking for a cat that brings tranquility and companionship.</p>
+                <p>Lucy is eagerly waiting for a forever home where she can share her affectionate nature and become a cherished member of the family. Adopt Lucy and experience the joy of having a delightful Calico cat in your life!</p>
+            </div>
+            <section class="about">
+                <div>
+                    <p><h1>ABOUT</h1><p>
+                    <p>GOOD WITH OTHER PETS:<br>Gets along well with other cats</p>
+                    <p>GOOD WITH CHILDREN: <br>Yes</p>
+                    <p>HOUSE-TRAINED:<br> Yes</p>
+                    <p>HEALTH: <br>Vaccinations up to date. <br> Spayed</p>
+                </div>
+                <div>
+                    <p><h1>INTERESTED IN ADOPTION?</h1></p>
+                    <p> <a href="../../faq.html"><button id="adoptbtn"> Adoption Guidelines</button></a></p>
+                    <p> <a href="../../contact.html"> <button id="adoptbtn">Contact Us</button></a> </p>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <footer>123 Main Street Towson, MD • 555-555-5555 us@me.com</footer>
+
+</body>
+
+</html>
