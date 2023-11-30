@@ -239,6 +239,18 @@ button.search-button {
     margin: 20px 150px 20px 150px; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+.avpetsFAQ 
+{
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+    color:rgb(0, 0, 0);
+    margin: 20px 150px 20px 150px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+}
 
 .pet-profile img {
     width: 150px;
