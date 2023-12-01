@@ -1,8 +1,23 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/SMTP.php';
+
+$phpmailer = new PHPMailer();
+
+$phpmailer->isSMTP();
+$phpmailer->Host = 'localhost';
+$phpmailer->SMTPAuth = false;
+$phpmailer->Port = 1025;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userEmail = $_POST["email"];
     $userMessage = $_POST["message"];
-    $companyEmail = "engineeingsoftware@";  // Replace with your company's email address
+    $companyEmail = "engineeingsoftware@gmail.com";  // Replace with your company's email address
 
     // Send confirmation email to the user
     $userSubject = "Thank you for contacting Pet Connect";

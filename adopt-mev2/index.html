@@ -27,12 +27,13 @@
                     <li class="desktop"><a href="contact.html">CONTACT</a></li>
                     <li><a href="login.html">LOG IN</a></li>
                 </ul>
+                <div id="cornerDisplay"></div>
             </nav>
         </header>
-        <div class="container">
-            <div class="search-container"></div>
-                <input type="text" id="search-input" placeholder="Search...">
-                <button class="search-button" onclick="searchPets()">Search</button>
+
+        <div class="welcome-banner">
+            <h1>Welcome to AdoptMe!</h1>
+            <h2>for Towson Animal Rescue Shelter</h2>
         </div>
 
         <section class="features">
@@ -124,16 +125,32 @@
         123 Main Street Towson, MD • 555-555-5555 engineeingsoftware@gmailcom
     </footer>
 
-    <script>
-        function searchPets() {
-            var searchInput = document.getElementById('search-input').value;
-            alert("You searched for: " + searchInput);
-        }
-    </script>
-
     <script src="script/main.js"></script>
     <!-- JavaScript for AI Chatbot -->
     <script src="script/aiButton.js"></script>
+    <script>
+        // Check if the user is logged in
+        const isLoggedIn = true; // Replace with your actual authentication check
+        const username = "username"; // Replace with the actual username
+
+        // Function to update the corner display
+        function updateCornerDisplay() {
+            const cornerDisplay = document.getElementById('cornerDisplay');
+
+            if (isLoggedIn) {
+                cornerDisplay.textContent = `${username} is logged in!`;
+                cornerDisplay.style.display = 'block';
+            } else {
+                // Hide the corner display if not logged in
+                cornerDisplay.style.display = 'none';
+            }
+        }
+
+        // Call the function on page load
+        window.onload = function () {
+            updateCornerDisplay();
+        };
+    </script>
 </body>
 
 </html>

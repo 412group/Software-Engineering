@@ -43,6 +43,11 @@ header .logo a {
     background-color:rgba(136, 227, 247, 0);
 }
 
+p {
+    padding-top: 20;
+    padding-bottom: 20;
+}
+
 nav li{
     display: inline-block;
     margin: 0 20px 0 0; 
@@ -174,45 +179,27 @@ section.extraspace {
     justify-content: center;
    
 }
-button.search-button {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: rgb(0, 136, 255);
-    color: white;
-    padding: 10px;
-    width: 100px;
-    border: 1px solid #ccc;
-}
 
-.search-container {
+.welcome-banner {
+    background-color: rgb(136, 227, 247);
+    color: whitesmoke;
     text-align: center;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px 150px;
+    border: solid rgb(136, 227, 247) 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.532) 0 0 10px;
+    text-shadow: #ccc;
 }
 
-/* Style the search input */
-#search-input {
+#cornerDisplay {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
     padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-/* Style the search button */
-#search-button {
-    padding: 10px 20px;
-    background-color: #9bcbff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Style the search results container */
-#search-results {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    display: none;
 }
 
 @media screen and (max-width: 800px) {

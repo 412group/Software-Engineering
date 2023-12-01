@@ -26,13 +26,13 @@
                     <li class="desktop"><a href="contact.html">CONTACT</a></li>
                     <li><a href="login.html">LOG IN</a></li>
                 </ul>
+                <div id="cornerDisplay"></div>
             </nav>
         </header>
 
         <div class="contact-container">
             <h2>Contact Us</h2>
-            <form class="contact-form" action="process_form2.php" method="post">
-                <!-- was process_forms.php -->
+            <form class="contact-form" id="contact-form" action="/contact" method="post" onsubmit="submitForm(event)">
                 <label class="contact-label" for="email">Email:</label>
                 <input class="contact-input" type="email" id="email" name="email" required>
     
@@ -44,12 +44,46 @@
         </div>
             <!-- AI Chatbot initialization -->
             <div id="rendering-information" data-formid="Frequently_Asked_Questions_D0PTH" data-frame-source="https://embed.pickaxeproject.com/axe?id=Frequently_Asked_Questions_D0PTH&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Real+Head+Pro&size_header=20&font_body=Real+Head+Pro&size_body=14&font_labels=Real+Head+Pro&size_labels=12&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_bb=FF9A8B&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_bbo=100&s_f=box&s_b=filled&s_t=0.5&s_r=2" data-title="Frequently Asked Questions!"></div>
-
-
         </section>
     
         <footer>123 Main Street Towson, MD • 555-555-5555 engineeingsoftware@gmailcom</footer>
     </body>
     <!-- JavaScript for AI Chatbot -->
     <script src="script/aiButton.js"></script>
+    <!-- Handles email notification -->
+    <script>
+        function submitForm() {
+            // Get form data
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            function submitForm() {
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Send the form data to the server
+                fetch('/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, message }),
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log(data);
+                    showPopup('Message sent successfully');
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                    showPopup('Message could not be sent. Please try again later.');
+                });
+            }
+        }
+    </script>
 </html>

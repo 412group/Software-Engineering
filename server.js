@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -17,6 +18,8 @@ db.once('open', function () {
 
 // Parse incoming requests
 app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'adopt-mev2')));
@@ -86,6 +89,54 @@ app.post('/login', async (req, res) => {
     res.status(500).send('Internal server error');
   }
 });
+
+app.post('/contact', async (req, res) => {
+  
+  const email = req.body.email;
+  const message = req.body.message;
+
+  try {
+    if(email && message){
+      // Create a Nodemailer transporter
+      let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'engineeingsoftware@gmail.com',
+          pass: 'rnnl qfmp lzyw bjur'
+        }
+      });
+
+      // Define the email options
+      let mailOptions = {
+        from: email,
+        to: 'engingeeingsoftware@gmail.com',
+        subject: 'New Contact Form Submission',
+        text: `Email: ${email}\nMessage: ${message}`
+      };
+
+      // Send the email
+      await transporter.sendMail(mailOptions);
+
+      // Define the email options for the user
+      let userMailOptions = {
+        from: 'engineeingsoftware@gmail.com',
+        to: email,
+        subject: 'Thank you for contacting us!',
+        text: 'We have received your message and will get back to you as soon as possible.',
+        Image: 'logo.png'
+      };
+  
+      // Send the email to the user
+      await transporter.sendMail(userMailOptions);
+
+      res.status(200).send('Message sent successfully');
+    } else {
+      res.status(400).send('Email and message are required');
+    }
+  } catch (error) {
+      res.status(500).send('Internal server error');
+  }
+})
 
 // Start the server
 app.listen(port, () => {
