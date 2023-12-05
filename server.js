@@ -129,7 +129,49 @@ app.post('/contact', async (req, res) => {
       // Send the email to the user
       await transporter.sendMail(userMailOptions);
 
-      res.status(200).send('Message sent successfully');
+      const successHtml = `
+        <html>
+          <head>
+            <style>
+              body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f0f0;
+              }
+              .container {
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+              .cute-button{
+                background: #ff9a8b;
+                color: white;
+                font-size: 18px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                margin: 10px;
+              }
+              h1 {
+                color: #28a745;
+              }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <h1>Message sent successfully!</h1>
+              <button class="cute-button">
+                <a href="index.html">Home</a>
+              </button>
+            </div>
+          </body>
+        </html>
+      `;
+
+      res.status(200).send(successHtml);
     } else {
       res.status(400).send('Email and message are required');
     }

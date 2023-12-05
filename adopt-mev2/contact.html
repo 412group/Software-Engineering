@@ -26,7 +26,6 @@
                     <li class="desktop"><a href="contact.html">CONTACT</a></li>
                     <li><a href="login.html">LOG IN</a></li>
                 </ul>
-                <div id="cornerDisplay"></div>
             </nav>
         </header>
 
@@ -68,21 +67,23 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({ email, message }),
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    console.log(data);
-                    showPopup('Message sent successfully');
-                })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                    showPopup('Message could not be sent. Please try again later.');
                 });
+                // .then(response => {
+                //     if (!response.ok) {
+                //         throw new Error('Network response was not ok');
+                //     } else {
+                //         alert('Message sent successfully!');
+                //         window.location.href = '/index.html'; // Redirect to home page
+                //     }
+                //     return response.text();
+                // })
+                // .then(data => {
+                //     console.log(data);
+                // })
+                // .catch(error => {
+                //     console.error('There was a problem with the fetch operation:', error);
+                //     showPopup('Message could not be sent. Please try again later.');
+                // });
             }
         }
     </script>

@@ -27,7 +27,6 @@
                     <li class="desktop"><a href="contact.html">CONTACT</a></li>
                     <li><a href="login.html">LOG IN</a></li>
                 </ul>
-                <div id="cornerDisplay"></div>
             </nav>
         </header>
 
@@ -53,7 +52,7 @@
             <div id="rendering-information" data-formid="Frequently_Asked_Questions_D0PTH" data-frame-source="https://embed.pickaxeproject.com/axe?id=Frequently_Asked_Questions_D0PTH&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Real+Head+Pro&size_header=20&font_body=Real+Head+Pro&size_body=14&font_labels=Real+Head+Pro&size_labels=12&font_button=Real+Head+Pro&size_button=16&c_fb=FFFFFF&c_ff=FFFFFF&c_fbd=888888&c_bb=FF9A8B&c_bt=FFFFFF&c_t=000000&s_ffo=100&s_bbo=100&s_f=box&s_b=filled&s_t=0.5&s_r=2" data-title="Frequently Asked Questions!"></div>
         </section>
         <section class="avpets">
-            <div>AVAILABLE PETS! Click to see more!</div>
+            <div>AVAILABLE PETS! Click to browse all!</div>
             <button class="cute-button">
                 <a href="pets.html">MORE</a>
             </button>
@@ -128,29 +127,6 @@
     <script src="script/main.js"></script>
     <!-- JavaScript for AI Chatbot -->
     <script src="script/aiButton.js"></script>
-    <script>
-        // Check if the user is logged in
-        const isLoggedIn = true; // Replace with your actual authentication check
-        const username = "username"; // Replace with the actual username
-
-        // Function to update the corner display
-        function updateCornerDisplay() {
-            const cornerDisplay = document.getElementById('cornerDisplay');
-
-            if (isLoggedIn) {
-                cornerDisplay.textContent = `${username} is logged in!`;
-                cornerDisplay.style.display = 'block';
-            } else {
-                // Hide the corner display if not logged in
-                cornerDisplay.style.display = 'none';
-            }
-        }
-
-        // Call the function on page load
-        window.onload = function () {
-            updateCornerDisplay();
-        };
-    </script>
 </body>
 
 </html>

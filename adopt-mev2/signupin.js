@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
   
-      // Perform validation if needed
+      // TODO: Perform validation
   
       // Send the form data to the server using fetch or another AJAX method
       fetch("/auth/signup", {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const username = document.getElementById("username").value;
       const password = document.getElementById("password").value;
   
-      // Perform validation if needed
+      // TODO: Perform validation
   
       // Send the form data to the server using fetch or another AJAX method
       fetch("/auth/login", {
@@ -60,11 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
       })
         .then(response => response.json())
         .then(data => {
-          // Handle the server response, e.g., redirect to another page
           console.log(data.message);
         })
         .catch(error => {
-          // Handle errors
           console.error("Error:", error);
         });
     }

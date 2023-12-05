@@ -17,7 +17,7 @@ $phpmailer->Port = 1025;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userEmail = $_POST["email"];
     $userMessage = $_POST["message"];
-    $companyEmail = "engineeingsoftware@gmail.com";  // Replace with your company's email address
+    $companyEmail = "engineeingsoftware@gmail.com"; // Our company email address
 
     // Send confirmation email to the user
     $userSubject = "Thank you for contacting Pet Connect";
@@ -29,10 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $companyMessage = "You have received a new message from:\n\nEmail: $userEmail\nMessage:\n$userMessage";
     mail($companyEmail, $companySubject, $companyMessage);
 
-    // You can add additional processing or error handling here if needed
-
-    // Redirect back to the contact page or show a thank you message
-    header("Location: contact.html");  // Replace with the actual URL of your contact page
+    // Redirect back to the home page
+    header("/index.html");
     exit();
 }
 ?>
