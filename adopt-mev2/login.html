@@ -11,7 +11,7 @@
 <div class="signup-container">
 <div class = "signin-box">
   <h1>User Login</h1>
-  
+  <!-- from  for user to enter their information-->
   <form id="loginForm">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
@@ -26,6 +26,7 @@
 </div>
 </div>
 
+<!--script to post information from email and password form and check if it matches on mongodb databse user collection->
   <script>
     async function submitForm() {
       const email = document.getElementById('email').value;
