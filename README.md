@@ -9,3 +9,6 @@ This is a javascript web app. Using VS code, we have been able to deploy on ever
 2. Make sure to run an `npm install` at the root of the repository to make sure your running environment has all the necessary packages.
 3. INSERT HOW TO CONNECT DATABASE
 4. Deploy on localhost 3000 using `node server.js`
+5. cd to software-Enfineering before running `node server.js`
+6. istall mongodb driver `npm install mongoose`
+
